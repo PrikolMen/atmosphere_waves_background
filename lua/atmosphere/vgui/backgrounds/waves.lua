@@ -15,7 +15,7 @@ cvars2.Callback('waves_width', function( old, new )
 end)
 
 function PANEL:Init()
-    self:OpenURL( 'asset://garrysmod/html/background/bg.html' )
+    self:OpenURL( 'asset://garrysmod/html/waves_background/index.html' )
     self:RunJS( string.format( 'var waves = new Waves(document.body, {fps: false, waves: %s, width: %s});waves.animate();', self.WaveCount, self.WaveWidth ) )
 end
 
