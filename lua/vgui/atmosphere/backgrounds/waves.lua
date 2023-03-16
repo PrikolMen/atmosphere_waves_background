@@ -1,10 +1,8 @@
-atmosphere.Require( 'convars' )
+local convars = atmosphere.Require( 'convars' )
 
 PANEL.ClassName = 'Waves'
 PANEL.ABackground = true
 PANEL.Base = 'AHTML'
-
-local convars = atmosphere.convars
 
 local count = convars.Create( 'waves_count', 3, TYPE_NUMBER, ' - Waves count on background.', true )
 local width = convars.Create( 'waves_width', 200, TYPE_NUMBER, ' - Waves width on background.', true )
